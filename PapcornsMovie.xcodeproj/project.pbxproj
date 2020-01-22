@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		4350E9FC23D8AE3300099C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FA23D8AE3300099C06 /* Main.storyboard */; };
 		4350E9FE23D8AE3400099C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FD23D8AE3400099C06 /* Assets.xcassets */; };
 		4350EA0123D8AE3400099C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FF23D8AE3400099C06 /* LaunchScreen.storyboard */; };
+		4350EA0A23D8B7BE00099C06 /* PapcornsNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA0923D8B7BE00099C06 /* PapcornsNetworkProvider.swift */; };
+		4350EA0C23D8B8F100099C06 /* PapcornsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA0B23D8B8F100099C06 /* PapcornsAPIService.swift */; };
+		4350EA0F23D8BA1000099C06 /* DSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA0E23D8BA1000099C06 /* DSocial.swift */; };
+		4350EA1123D8CA3100099C06 /* DMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1023D8CA3100099C06 /* DMovie.swift */; };
 		8717348AE919916E35147A84 /* Pods_PapcornsMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		4350E9FD23D8AE3400099C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4350EA0023D8AE3400099C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4350EA0223D8AE3400099C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4350EA0923D8B7BE00099C06 /* PapcornsNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapcornsNetworkProvider.swift; sourceTree = "<group>"; };
+		4350EA0B23D8B8F100099C06 /* PapcornsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapcornsAPIService.swift; sourceTree = "<group>"; };
+		4350EA0E23D8BA1000099C06 /* DSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSocial.swift; sourceTree = "<group>"; };
+		4350EA1023D8CA3100099C06 /* DMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMovie.swift; sourceTree = "<group>"; };
 		A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PapcornsMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5FAFA9F8E444E042FA5E6 /* Pods-PapcornsMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PapcornsMovie.debug.xcconfig"; path = "Target Support Files/Pods-PapcornsMovie/Pods-PapcornsMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +56,6 @@
 				BAD5FAFA9F8E444E042FA5E6 /* Pods-PapcornsMovie.debug.xcconfig */,
 				32E7C8397DEE51E96F498542 /* Pods-PapcornsMovie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,8 @@
 		4350E9F323D8AE3200099C06 /* PapcornsMovie */ = {
 			isa = PBXGroup;
 			children = (
+				4350EA0D23D8B9CB00099C06 /* Model */,
+				4350EA0823D8B79E00099C06 /* Network */,
 				4350E9F423D8AE3200099C06 /* AppDelegate.swift */,
 				4350E9F623D8AE3200099C06 /* SceneDelegate.swift */,
 				4350E9F823D8AE3300099C06 /* ViewController.swift */,
@@ -82,6 +91,24 @@
 				4350EA0223D8AE3400099C06 /* Info.plist */,
 			);
 			path = PapcornsMovie;
+			sourceTree = "<group>";
+		};
+		4350EA0823D8B79E00099C06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4350EA0923D8B7BE00099C06 /* PapcornsNetworkProvider.swift */,
+				4350EA0B23D8B8F100099C06 /* PapcornsAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4350EA0D23D8B9CB00099C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4350EA0E23D8BA1000099C06 /* DSocial.swift */,
+				4350EA1023D8CA3100099C06 /* DMovie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C1E9FC3E075CD79596FE7B6A /* Frameworks */ = {
@@ -208,8 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4350E9F923D8AE3300099C06 /* ViewController.swift in Sources */,
+				4350EA0F23D8BA1000099C06 /* DSocial.swift in Sources */,
 				4350E9F523D8AE3200099C06 /* AppDelegate.swift in Sources */,
 				4350E9F723D8AE3200099C06 /* SceneDelegate.swift in Sources */,
+				4350EA1123D8CA3100099C06 /* DMovie.swift in Sources */,
+				4350EA0C23D8B8F100099C06 /* PapcornsAPIService.swift in Sources */,
+				4350EA0A23D8B7BE00099C06 /* PapcornsNetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
