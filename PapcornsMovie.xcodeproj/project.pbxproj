@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4350E9F523D8AE3200099C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350E9F423D8AE3200099C06 /* AppDelegate.swift */; };
 		4350E9F723D8AE3200099C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350E9F623D8AE3200099C06 /* SceneDelegate.swift */; };
-		4350E9F923D8AE3300099C06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350E9F823D8AE3300099C06 /* ViewController.swift */; };
 		4350E9FC23D8AE3300099C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FA23D8AE3300099C06 /* Main.storyboard */; };
 		4350E9FE23D8AE3400099C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FD23D8AE3400099C06 /* Assets.xcassets */; };
 		4350EA0123D8AE3400099C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4350E9FF23D8AE3400099C06 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,12 @@
 		4350EA0C23D8B8F100099C06 /* PapcornsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA0B23D8B8F100099C06 /* PapcornsAPIService.swift */; };
 		4350EA0F23D8BA1000099C06 /* DSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA0E23D8BA1000099C06 /* DSocial.swift */; };
 		4350EA1123D8CA3100099C06 /* DMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1023D8CA3100099C06 /* DMovie.swift */; };
+		4350EA1423D8D73100099C06 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1323D8D73100099C06 /* MainViewController.swift */; };
+		4350EA1723D9079900099C06 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1623D9079900099C06 /* MoviesViewController.swift */; };
+		4350EA1923D907A500099C06 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1823D907A500099C06 /* SocialViewController.swift */; };
+		4350EA1D23D90C8A00099C06 /* SocialPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1B23D90C8A00099C06 /* SocialPostCollectionViewCell.swift */; };
+		4350EA1E23D90C8A00099C06 /* SocialPostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4350EA1C23D90C8A00099C06 /* SocialPostCollectionViewCell.xib */; };
+		4350EA2023DA12CA00099C06 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1F23DA12CA00099C06 /* extentions.swift */; };
 		8717348AE919916E35147A84 /* Pods_PapcornsMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +30,6 @@
 		4350E9F123D8AE3200099C06 /* PapcornsMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PapcornsMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4350E9F423D8AE3200099C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4350E9F623D8AE3200099C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4350E9F823D8AE3300099C06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4350E9FB23D8AE3300099C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4350E9FD23D8AE3400099C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4350EA0023D8AE3400099C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +38,12 @@
 		4350EA0B23D8B8F100099C06 /* PapcornsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapcornsAPIService.swift; sourceTree = "<group>"; };
 		4350EA0E23D8BA1000099C06 /* DSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSocial.swift; sourceTree = "<group>"; };
 		4350EA1023D8CA3100099C06 /* DMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMovie.swift; sourceTree = "<group>"; };
+		4350EA1323D8D73100099C06 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4350EA1623D9079900099C06 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		4350EA1823D907A500099C06 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		4350EA1B23D90C8A00099C06 /* SocialPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		4350EA1C23D90C8A00099C06 /* SocialPostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialPostCollectionViewCell.xib; sourceTree = "<group>"; };
+		4350EA1F23DA12CA00099C06 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
 		A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PapcornsMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5FAFA9F8E444E042FA5E6 /* Pods-PapcornsMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PapcornsMovie.debug.xcconfig"; path = "Target Support Files/Pods-PapcornsMovie/Pods-PapcornsMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,10 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				4350EA0D23D8B9CB00099C06 /* Model */,
+				4350EA1A23D907E600099C06 /* View */,
+				4350EA1523D9074800099C06 /* Controller */,
 				4350EA0823D8B79E00099C06 /* Network */,
 				4350E9F423D8AE3200099C06 /* AppDelegate.swift */,
 				4350E9F623D8AE3200099C06 /* SceneDelegate.swift */,
-				4350E9F823D8AE3300099C06 /* ViewController.swift */,
 				4350E9FA23D8AE3300099C06 /* Main.storyboard */,
 				4350E9FD23D8AE3400099C06 /* Assets.xcassets */,
 				4350E9FF23D8AE3400099C06 /* LaunchScreen.storyboard */,
@@ -109,6 +120,26 @@
 				4350EA1023D8CA3100099C06 /* DMovie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4350EA1523D9074800099C06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4350EA1323D8D73100099C06 /* MainViewController.swift */,
+				4350EA1623D9079900099C06 /* MoviesViewController.swift */,
+				4350EA1823D907A500099C06 /* SocialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4350EA1A23D907E600099C06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4350EA1B23D90C8A00099C06 /* SocialPostCollectionViewCell.swift */,
+				4350EA1C23D90C8A00099C06 /* SocialPostCollectionViewCell.xib */,
+				4350EA1F23DA12CA00099C06 /* extentions.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C1E9FC3E075CD79596FE7B6A /* Frameworks */ = {
@@ -181,6 +212,7 @@
 			files = (
 				4350EA0123D8AE3400099C06 /* LaunchScreen.storyboard in Resources */,
 				4350E9FE23D8AE3400099C06 /* Assets.xcassets in Resources */,
+				4350EA1E23D90C8A00099C06 /* SocialPostCollectionViewCell.xib in Resources */,
 				4350E9FC23D8AE3300099C06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,13 +266,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4350E9F923D8AE3300099C06 /* ViewController.swift in Sources */,
 				4350EA0F23D8BA1000099C06 /* DSocial.swift in Sources */,
 				4350E9F523D8AE3200099C06 /* AppDelegate.swift in Sources */,
 				4350E9F723D8AE3200099C06 /* SceneDelegate.swift in Sources */,
 				4350EA1123D8CA3100099C06 /* DMovie.swift in Sources */,
 				4350EA0C23D8B8F100099C06 /* PapcornsAPIService.swift in Sources */,
 				4350EA0A23D8B7BE00099C06 /* PapcornsNetworkProvider.swift in Sources */,
+				4350EA1923D907A500099C06 /* SocialViewController.swift in Sources */,
+				4350EA1423D8D73100099C06 /* MainViewController.swift in Sources */,
+				4350EA2023DA12CA00099C06 /* extentions.swift in Sources */,
+				4350EA1723D9079900099C06 /* MoviesViewController.swift in Sources */,
+				4350EA1D23D90C8A00099C06 /* SocialPostCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
