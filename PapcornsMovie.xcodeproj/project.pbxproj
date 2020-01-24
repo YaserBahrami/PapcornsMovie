@@ -22,6 +22,8 @@
 		4350EA1D23D90C8A00099C06 /* SocialPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1B23D90C8A00099C06 /* SocialPostTableViewCell.swift */; };
 		4350EA1E23D90C8A00099C06 /* SocialPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4350EA1C23D90C8A00099C06 /* SocialPostTableViewCell.xib */; };
 		4350EA2023DA12CA00099C06 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350EA1F23DA12CA00099C06 /* extentions.swift */; };
+		43C0DC0F23DB41D800FBE772 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0DC0D23DB41D800FBE772 /* MovieCollectionViewCell.swift */; };
+		43C0DC1023DB41D800FBE772 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C0DC0E23DB41D800FBE772 /* MovieCollectionViewCell.xib */; };
 		8717348AE919916E35147A84 /* Pods_PapcornsMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		4350EA1B23D90C8A00099C06 /* SocialPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialPostTableViewCell.swift; sourceTree = "<group>"; };
 		4350EA1C23D90C8A00099C06 /* SocialPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialPostTableViewCell.xib; sourceTree = "<group>"; };
 		4350EA1F23DA12CA00099C06 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		43C0DC0D23DB41D800FBE772 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		43C0DC0E23DB41D800FBE772 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		A7D4242B507F400FEE3FF180 /* Pods_PapcornsMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PapcornsMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5FAFA9F8E444E042FA5E6 /* Pods-PapcornsMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PapcornsMovie.debug.xcconfig"; path = "Target Support Files/Pods-PapcornsMovie/Pods-PapcornsMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 				4350EA1B23D90C8A00099C06 /* SocialPostTableViewCell.swift */,
 				4350EA1C23D90C8A00099C06 /* SocialPostTableViewCell.xib */,
 				4350EA1F23DA12CA00099C06 /* extentions.swift */,
+				43C0DC0D23DB41D800FBE772 /* MovieCollectionViewCell.swift */,
+				43C0DC0E23DB41D800FBE772 /* MovieCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C0DC1023DB41D800FBE772 /* MovieCollectionViewCell.xib in Resources */,
 				4350EA0123D8AE3400099C06 /* LaunchScreen.storyboard in Resources */,
 				4350E9FE23D8AE3400099C06 /* Assets.xcassets in Resources */,
 				4350EA1E23D90C8A00099C06 /* SocialPostTableViewCell.xib in Resources */,
@@ -269,6 +276,7 @@
 				4350EA0F23D8BA1000099C06 /* DSocial.swift in Sources */,
 				4350E9F523D8AE3200099C06 /* AppDelegate.swift in Sources */,
 				4350E9F723D8AE3200099C06 /* SceneDelegate.swift in Sources */,
+				43C0DC0F23DB41D800FBE772 /* MovieCollectionViewCell.swift in Sources */,
 				4350EA1123D8CA3100099C06 /* DMovie.swift in Sources */,
 				4350EA0C23D8B8F100099C06 /* PapcornsAPIService.swift in Sources */,
 				4350EA0A23D8B7BE00099C06 /* PapcornsNetworkProvider.swift in Sources */,

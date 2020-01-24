@@ -43,7 +43,7 @@ class PapcornsAPIService{
     }
     
     func getMovieList(callBack: @escaping (Result<[DMovie]>) -> Void){
-        provider.request(.GetSocialData) { result in
+        provider.request(.GetMovieData) { result in
             switch result{
             case .success(let moyaResponse):
                 let data = moyaResponse.data
