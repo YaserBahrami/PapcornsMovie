@@ -50,6 +50,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ySX-8P-bEq" secondAttribute="trailing" constant="5" id="91l-S4-bKv"/>
                 <constraint firstItem="ySX-8P-bEq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="97v-F6-xcY"/>
+                <constraint firstItem="wJR-z9-d5V" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.625" id="BXq-00-K7Y"/>
                 <constraint firstItem="ySX-8P-bEq" firstAttribute="top" secondItem="wJR-z9-d5V" secondAttribute="bottom" constant="5" id="ClQ-VA-eGO"/>
                 <constraint firstItem="wJR-z9-d5V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="QIS-5Z-JsG"/>
                 <constraint firstItem="wJR-z9-d5V" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.944444" id="R4y-xe-iiC"/>

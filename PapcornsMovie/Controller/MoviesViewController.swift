@@ -21,11 +21,6 @@ class MoviesViewController: UIViewController {
         self.recommendedCollectionView.register(MovieCollectionViewCell.self)
         self.popularCollectionView.register(MovieCollectionViewCell.self)
         
-        
-        recommendedCollectionView.layer.borderWidth = 1.0;
-        
-        recommendedCollectionView.layer.cornerRadius = 4.0;
-        
         PapcornsAPIService.shared.getMovieList { (result) in
             switch result{
             case .success(let model):
