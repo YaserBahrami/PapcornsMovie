@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SocialPostCollectionViewCell: UICollectionViewCell, Reusable {
-
+class SocialPostTableViewCell: UITableViewCell, Reusable {
+    
+    @IBOutlet weak var customView: UIView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var postDateLabel: UILabel!
     @IBOutlet weak var postMessageLabel: UILabel!
@@ -18,11 +19,29 @@ class SocialPostCollectionViewCell: UICollectionViewCell, Reusable {
     @IBOutlet weak var CommentButton: UIButton!
     @IBOutlet weak var postImage: UIImageView!
     
+    var socialData: DSocial!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func setupView(){
+        userNameLabel.text = socialData.userFullName
+        postDateLabel.text = socialData.createdAt
+        postMessageLabel.text = socialData.postMessage
+        userImage.downloaded(from: socialData.userImageUrl)
+        LikeButton.titleLabel?.text = "\(socialData.likeCount!)"
+        CommentButton.titleLabel?.text = "\(socialData.commentCount!)"
+        if socialData.postImage == nil{
+            if postImage != nil{
+                postImage.removeFromSuperview()
+            }
+        }
+        postImage.downloaded(from: socialData.postImage)
+    }
+    
+    
 }
 
 

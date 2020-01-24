@@ -14,10 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="1dt-Vk-gpk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lTi-Eo-woZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VH5-29-uHZ" id="TDj-Ov-h8W"/>
+                                    <outlet property="delegate" destination="VH5-29-uHZ" id="H3l-fG-eoK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lTi-Eo-woZ" firstAttribute="leading" secondItem="iiQ-UO-6Vu" secondAttribute="leading" id="4Tp-Dv-1pd"/>
+                            <constraint firstItem="lTi-Eo-woZ" firstAttribute="top" secondItem="iiQ-UO-6Vu" secondAttribute="top" id="HjL-4s-nVt"/>
+                            <constraint firstItem="iiQ-UO-6Vu" firstAttribute="trailing" secondItem="lTi-Eo-woZ" secondAttribute="trailing" id="Me1-3b-343"/>
+                            <constraint firstItem="iiQ-UO-6Vu" firstAttribute="bottom" secondItem="lTi-Eo-woZ" secondAttribute="bottom" id="OGK-sM-kR4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iiQ-UO-6Vu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="search" selectedImage="searchOn" id="msj-6m-JXC"/>
+                    <connections>
+                        <outlet property="socialTableView" destination="lTi-Eo-woZ" id="bmw-pD-seN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZb-uH-151" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

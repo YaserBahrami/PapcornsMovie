@@ -11,7 +11,7 @@ import Alamofire
 
 
 extension UIImageView {
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleToFill) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -28,6 +28,18 @@ extension UIImageView {
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
+    }
+}
+
+extension UITableView {
+    
+    func register<T: UITableViewCell>(_ type: T.Type) where T: Reusable {
+        let nib = UINib(nibName: T.identifier, bundle: nil)
+        self.register(nib, forCellReuseIdentifier: T.identifier)
+    }
+    
+    func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: Reusable  {
+        return self.dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
     }
 }
 
